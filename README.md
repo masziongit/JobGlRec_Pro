@@ -1,3 +1,8 @@
+#JobGlRec
+
+Configuration
+---------------
+```sh
 #SFTP server
 sftp.host=192.168.99.100
 sftp.port=2222
@@ -10,7 +15,6 @@ sftp.ssh.keyfile=nopp
 sftp.ssh.passphrase=
 
 #File
-file.type.zip=xls
 file.name.dateformat=ddMMyyyy
 file.share.path=payhshare/Finace/ONS_LOGS/BJMS/011/H001/GLREC
 
@@ -40,7 +44,15 @@ mail.bcc=
 mail.subject=[FILE GLREC] - as of #DD-MM-YYYY from PAYMENTHUB
 mail.message.text=Test Sending
 
+```
 
-
+Usage command
+---------------
+```sh
+java -Dconfig.file=${config.properties} -jar ${PaymentHub.jar} ${mode}
+```
+  Use -Dconfig.file=${config.properties} to get your config
+	
+  Use -jar ${CFR.jar} to get your jarfile to run
 
 
