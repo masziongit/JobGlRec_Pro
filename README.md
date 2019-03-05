@@ -16,12 +16,14 @@ sftp.ssh.keyfile=nopp
 sftp.ssh.passphrase=
 
 #File
+file.name.prefix=GLRec_
 file.name.dateformat=ddMMyyyy
 file.share.path=payhshare/Finace/ONS_LOGS/BJMS/011/H001/GLREC
+file.type.zip=xls
 
 #Log4j
 log.config.file=log4j.properties
-        
+
 #MAIL SERVER
 mail.transport.protocol=smtp
 mail.smtp.auth=true
@@ -41,10 +43,9 @@ mail.sender=
 mail.to=
 mail.cc=
 mail.bcc=
-
-mail.subject=[FILE GLREC] - as of #DD-MM-YYYY from PAYMENTHUB
-mail.message.text=Test Sending
-
+mail.dateformat=dd-MM-yyyy
+mail.subject=[FILE GLREC] - as of #dd-MM-yyyy from PAYMENTHUB
+mail.message.html.file=body_message.html
 ```
 
 Usage command
